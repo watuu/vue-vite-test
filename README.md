@@ -205,3 +205,8 @@ npm run preview
 ```
 yarn preview
 ```
+
+
+yarn add vue
+yarn add @vitejs/plugin-vue
+

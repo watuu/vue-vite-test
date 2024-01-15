@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import sassGlobImports from "vite-plugin-sass-glob-import";
 import { viteImageOretimaizer } from "@hilosiva/vite-plugin-image-oretimaizer";
 import { viteHtmlOreder } from "@hilosiva/vite-plugin-html-oreder";
+import vue from '@vitejs/plugin-vue'
 import path from "path";
 
 const dir = {
@@ -15,6 +16,7 @@ export default defineConfig({
   // base: "./",
   publicDir: `../${dir.publicDir}`,
   plugins: [
+    vue(),
     viteHtmlOreder(),
     viteImageOretimaizer({
       generate: {
